@@ -12,6 +12,7 @@ namespace OVD_VistaVirtuals
 {
     public partial class VistaVirtuals : Form
     {
+        string filePath;
         public VistaVirtuals()
         {
             InitializeComponent();
@@ -25,6 +26,11 @@ namespace OVD_VistaVirtuals
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void BTN_start_exe_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(@"C:\Users\joris\OneDrive\Documenten\TrashMasterz\demo V4\trash-Masterz.exe");
         }
     }
 }
