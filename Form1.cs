@@ -28,6 +28,3 @@ namespace OVD_VistaVirtuals
         }
     }
 }
-
-
-//max vertappens oude nummer
