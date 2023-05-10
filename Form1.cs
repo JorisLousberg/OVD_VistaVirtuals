@@ -19,7 +19,8 @@ namespace OVD_VistaVirtuals
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            PNL_Start_Screen.BringToFront();
+            MessageBox.Show("Test Start");
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -28,4 +29,3 @@ namespace OVD_VistaVirtuals
         }
     }
 }
-//EEEEEEEEEEEEEEEEEEE
