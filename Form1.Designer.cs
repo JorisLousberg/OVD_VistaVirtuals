@@ -39,10 +39,6 @@ namespace OVD_VistaVirtuals
             this.btn_veva = new System.Windows.Forms.Button();
             this.PNL_Scenario_Screen = new System.Windows.Forms.Panel();
             this.BTN_start_exe = new System.Windows.Forms.Button();
-            this.PNL_LoadDataToTable_Screen = new System.Windows.Forms.Panel();
-            this.PNL_AddScenario_Screen = new System.Windows.Forms.Panel();
-            this.PNL_authorisation_Screen = new System.Windows.Forms.Panel();
-            this.PNL_ChangePassword_Screen = new System.Windows.Forms.Panel();
             this.PNL_Start_Screen.SuspendLayout();
             this.PNL_Study_Screen.SuspendLayout();
             this.PNL_Scenario_Screen.SuspendLayout();
@@ -168,46 +164,6 @@ namespace OVD_VistaVirtuals
             this.BTN_start_exe.UseVisualStyleBackColor = true;
             this.BTN_start_exe.Click += new System.EventHandler(this.BTN_start_exe_Click);
             // 
-            // PNL_LoadDataToTable_Screen
-            // 
-            this.PNL_LoadDataToTable_Screen.BackColor = System.Drawing.Color.Transparent;
-            this.PNL_LoadDataToTable_Screen.Location = new System.Drawing.Point(0, 0);
-            this.PNL_LoadDataToTable_Screen.Margin = new System.Windows.Forms.Padding(4);
-            this.PNL_LoadDataToTable_Screen.Name = "PNL_LoadDataToTable_Screen";
-            this.PNL_LoadDataToTable_Screen.Size = new System.Drawing.Size(801, 451);
-            this.PNL_LoadDataToTable_Screen.TabIndex = 2;
-            this.PNL_LoadDataToTable_Screen.Visible = false;
-            // 
-            // PNL_AddScenario_Screen
-            // 
-            this.PNL_AddScenario_Screen.BackColor = System.Drawing.Color.Transparent;
-            this.PNL_AddScenario_Screen.Location = new System.Drawing.Point(0, 0);
-            this.PNL_AddScenario_Screen.Margin = new System.Windows.Forms.Padding(4);
-            this.PNL_AddScenario_Screen.Name = "PNL_AddScenario_Screen";
-            this.PNL_AddScenario_Screen.Size = new System.Drawing.Size(801, 451);
-            this.PNL_AddScenario_Screen.TabIndex = 2;
-            this.PNL_AddScenario_Screen.Visible = false;
-            // 
-            // PNL_authorisation_Screen
-            // 
-            this.PNL_authorisation_Screen.BackColor = System.Drawing.Color.Transparent;
-            this.PNL_authorisation_Screen.Location = new System.Drawing.Point(0, 0);
-            this.PNL_authorisation_Screen.Margin = new System.Windows.Forms.Padding(4);
-            this.PNL_authorisation_Screen.Name = "PNL_authorisation_Screen";
-            this.PNL_authorisation_Screen.Size = new System.Drawing.Size(801, 451);
-            this.PNL_authorisation_Screen.TabIndex = 2;
-            this.PNL_authorisation_Screen.Visible = false;
-            // 
-            // PNL_ChangePassword_Screen
-            // 
-            this.PNL_ChangePassword_Screen.BackColor = System.Drawing.Color.Transparent;
-            this.PNL_ChangePassword_Screen.Location = new System.Drawing.Point(0, 0);
-            this.PNL_ChangePassword_Screen.Margin = new System.Windows.Forms.Padding(4);
-            this.PNL_ChangePassword_Screen.Name = "PNL_ChangePassword_Screen";
-            this.PNL_ChangePassword_Screen.Size = new System.Drawing.Size(801, 451);
-            this.PNL_ChangePassword_Screen.TabIndex = 3;
-            this.PNL_ChangePassword_Screen.Visible = false;
-            // 
             // VistaVirtuals
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -219,10 +175,6 @@ namespace OVD_VistaVirtuals
             this.Controls.Add(this.PNL_Start_Screen);
             this.Controls.Add(this.PNL_Study_Screen);
             this.Controls.Add(this.PNL_Scenario_Screen);
-            this.Controls.Add(this.PNL_authorisation_Screen);
-            this.Controls.Add(this.PNL_LoadDataToTable_Screen);
-            this.Controls.Add(this.PNL_AddScenario_Screen);
-            this.Controls.Add(this.PNL_ChangePassword_Screen);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimizeBox = false;
@@ -242,10 +194,6 @@ namespace OVD_VistaVirtuals
         private System.Windows.Forms.Panel PNL_Start_Screen;
         private System.Windows.Forms.Panel PNL_Study_Screen;
         private System.Windows.Forms.Panel PNL_Scenario_Screen;
-        private System.Windows.Forms.Panel PNL_LoadDataToTable_Screen;
-        private System.Windows.Forms.Panel PNL_AddScenario_Screen;
-        private System.Windows.Forms.Panel PNL_authorisation_Screen;
-        private System.Windows.Forms.Panel PNL_ChangePassword_Screen;
         private System.Windows.Forms.Button BTN_start_exe;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
