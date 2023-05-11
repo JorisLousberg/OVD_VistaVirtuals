@@ -12,7 +12,7 @@ namespace OVD_VistaVirtuals
 {
     public partial class VistaVirtuals : Form
     {
-        string filePath;
+        
         public VistaVirtuals()
         {
             InitializeComponent();
