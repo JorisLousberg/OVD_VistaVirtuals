@@ -30,6 +30,7 @@ namespace OVD_VistaVirtuals
         private void InitializeComponent()
         {
             this.PNL_Start_Screen = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.PNL_Study_Screen = new System.Windows.Forms.Panel();
             this.btn_terug = new System.Windows.Forms.Button();
@@ -37,15 +38,14 @@ namespace OVD_VistaVirtuals
             this.btn_HTV = new System.Windows.Forms.Button();
             this.btn_veva = new System.Windows.Forms.Button();
             this.PNL_Scenario_Screen = new System.Windows.Forms.Panel();
+            this.BTN_start_exe = new System.Windows.Forms.Button();
             this.PNL_LoadDataToTable_Screen = new System.Windows.Forms.Panel();
             this.PNL_AddScenario_Screen = new System.Windows.Forms.Panel();
             this.PNL_authorisation_Screen = new System.Windows.Forms.Panel();
             this.PNL_ChangePassword_Screen = new System.Windows.Forms.Panel();
-            this.BTN_start_exe = new System.Windows.Forms.Button();
-            this.PNL_Scenario_Screen.SuspendLayout();
-            this.button3 = new System.Windows.Forms.Button();
             this.PNL_Start_Screen.SuspendLayout();
             this.PNL_Study_Screen.SuspendLayout();
+            this.PNL_Scenario_Screen.SuspendLayout();
             this.SuspendLayout();
             // 
             // PNL_Start_Screen
@@ -57,12 +57,18 @@ namespace OVD_VistaVirtuals
             this.PNL_Start_Screen.Margin = new System.Windows.Forms.Padding(4);
             this.PNL_Start_Screen.Name = "PNL_Start_Screen";
             this.PNL_Start_Screen.Size = new System.Drawing.Size(798, 451);
-            this.PNL_Start_Screen.TabIndex = 2;
-            this.PNL_Start_Screen.Name = "PNL_Start_Screen";
-            this.PNL_Start_Screen.Size = new System.Drawing.Size(798, 451);
             this.PNL_Start_Screen.TabIndex = 0;
-            this.PNL_Start_Screen.Visible = false;
             this.PNL_Start_Screen.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(12, 368);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(120, 56);
+            this.button3.TabIndex = 1;
+            this.button3.Text = "Oculus";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button1
             // 
@@ -152,6 +158,16 @@ namespace OVD_VistaVirtuals
             this.PNL_Scenario_Screen.TabIndex = 1;
             this.PNL_Scenario_Screen.Visible = false;
             // 
+            // BTN_start_exe
+            // 
+            this.BTN_start_exe.Location = new System.Drawing.Point(281, 186);
+            this.BTN_start_exe.Name = "BTN_start_exe";
+            this.BTN_start_exe.Size = new System.Drawing.Size(239, 66);
+            this.BTN_start_exe.TabIndex = 0;
+            this.BTN_start_exe.Text = "start program";
+            this.BTN_start_exe.UseVisualStyleBackColor = true;
+            this.BTN_start_exe.Click += new System.EventHandler(this.BTN_start_exe_Click);
+            // 
             // PNL_LoadDataToTable_Screen
             // 
             this.PNL_LoadDataToTable_Screen.BackColor = System.Drawing.Color.Transparent;
@@ -166,9 +182,6 @@ namespace OVD_VistaVirtuals
             // 
             this.PNL_AddScenario_Screen.BackColor = System.Drawing.Color.Transparent;
             this.PNL_AddScenario_Screen.Location = new System.Drawing.Point(0, 0);
-            this.PNL_AddScenario_Screen.Name = "PNL_AddScenario_Screen";
-            this.PNL_AddScenario_Screen.Size = new System.Drawing.Size(801, 451);
-            this.PNL_AddScenario_Screen.TabIndex = 0;
             this.PNL_AddScenario_Screen.Margin = new System.Windows.Forms.Padding(4);
             this.PNL_AddScenario_Screen.Name = "PNL_AddScenario_Screen";
             this.PNL_AddScenario_Screen.Size = new System.Drawing.Size(801, 451);
@@ -195,25 +208,6 @@ namespace OVD_VistaVirtuals
             this.PNL_ChangePassword_Screen.TabIndex = 3;
             this.PNL_ChangePassword_Screen.Visible = false;
             // 
-            // BTN_start_exe
-            // 
-            this.BTN_start_exe.Location = new System.Drawing.Point(281, 186);
-            this.BTN_start_exe.Name = "BTN_start_exe";
-            this.BTN_start_exe.Size = new System.Drawing.Size(239, 66);
-            this.BTN_start_exe.TabIndex = 0;
-            this.BTN_start_exe.Text = "start program";
-            this.BTN_start_exe.UseVisualStyleBackColor = true;
-            this.BTN_start_exe.Click += new System.EventHandler(this.BTN_start_exe_Click);
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(53, 466);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(120, 56);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Oculus";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // VistaVirtuals
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -222,25 +216,23 @@ namespace OVD_VistaVirtuals
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ControlBox = false;
+            this.Controls.Add(this.PNL_Start_Screen);
             this.Controls.Add(this.PNL_Study_Screen);
             this.Controls.Add(this.PNL_Scenario_Screen);
             this.Controls.Add(this.PNL_authorisation_Screen);
             this.Controls.Add(this.PNL_LoadDataToTable_Screen);
             this.Controls.Add(this.PNL_AddScenario_Screen);
             this.Controls.Add(this.PNL_ChangePassword_Screen);
-            this.Controls.Add(this.PNL_Start_Screen);
-            this.Controls.Add(this.PNL_Study_Screen);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.DoubleBuffered = true;
             this.MinimizeBox = false;
             this.Name = "VistaVirtuals";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.PNL_Scenario_Screen.ResumeLayout(false);
             this.PNL_Start_Screen.ResumeLayout(false);
             this.PNL_Study_Screen.ResumeLayout(false);
             this.PNL_Study_Screen.PerformLayout();
+            this.PNL_Scenario_Screen.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

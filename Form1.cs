@@ -51,8 +51,8 @@ namespace OVD_VistaVirtuals
             ProcessStartInfo sInfo = new ProcessStartInfo("https://www.youtube.com/watch?v=GtL1huin9EE&t=1s");
             Process.Start(sInfo);
         }
-    }
-}
+    
+
         private void btn_veva_Click(object sender, EventArgs e)
         {
             PNL_Scenario_Screen.Visible = true;
