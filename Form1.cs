@@ -14,6 +14,8 @@ namespace OVD_VistaVirtuals
     public partial class VistaVirtuals : Form
     {
         
+        public string opleiding;
+
         public VistaVirtuals()
         {
             InitializeComponent();
@@ -23,6 +25,7 @@ namespace OVD_VistaVirtuals
         {
             PNL_Start_Screen.BringToFront();
             MessageBox.Show("Test Start");
+ 
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -48,5 +51,47 @@ namespace OVD_VistaVirtuals
             ProcessStartInfo sInfo = new ProcessStartInfo("https://www.youtube.com/watch?v=GtL1huin9EE&t=1s");
             Process.Start(sInfo);
         }
+    }
+}
+        private void btn_veva_Click(object sender, EventArgs e)
+        {
+            PNL_Scenario_Screen.Visible = true;
+            PNL_Scenario_Screen.BringToFront();
+            PNL_Study_Screen.Visible = false;
+
+            opleiding = "VEVA";
+
+           /* MessageBox.Show("click here");
+            this.Close();*/
+        }
+
+        private void btn_HTV_Click(object sender, EventArgs e)
+        {
+            PNL_Scenario_Screen.Visible = true;
+            PNL_Scenario_Screen.BringToFront();
+            PNL_Study_Screen.Visible = false;
+
+            opleiding = "HTV";
+
+        }
+
+        private void btn_PB_Click(object sender, EventArgs e)
+        {
+            PNL_Scenario_Screen.Visible = true;
+            PNL_Scenario_Screen.BringToFront();
+            PNL_Study_Screen.Visible = false;
+
+            opleiding = "PB";
+
+        }
+
+        private void btn_terug_Click(object sender, EventArgs e)
+        {
+            PNL_Scenario_Screen.Visible = true;
+            PNL_Scenario_Screen.BringToFront();
+            PNL_Start_Screen.Visible = false;
+
+        }
+
     }
 }
