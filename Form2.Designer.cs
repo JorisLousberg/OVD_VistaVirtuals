@@ -30,36 +30,39 @@ namespace OVD_VistaVirtuals
         private void InitializeComponent()
         {
             this.PNL_authorisation = new System.Windows.Forms.Panel();
-            this.PNL_ScenarioOverVieuw = new System.Windows.Forms.Panel();
+            this.PNL_ScenarioOverview = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // PNL_authorisation
             // 
             this.PNL_authorisation.BackColor = System.Drawing.Color.Transparent;
             this.PNL_authorisation.Location = new System.Drawing.Point(0, 0);
+            this.PNL_authorisation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PNL_authorisation.Name = "PNL_authorisation";
-            this.PNL_authorisation.Size = new System.Drawing.Size(802, 450);
+            this.PNL_authorisation.Size = new System.Drawing.Size(1069, 554);
             this.PNL_authorisation.TabIndex = 0;
             // 
-            // PNL_ScenarioOverVieuw
+            // PNL_ScenarioOverview
             // 
-            this.PNL_ScenarioOverVieuw.BackColor = System.Drawing.Color.Transparent;
-            this.PNL_ScenarioOverVieuw.Location = new System.Drawing.Point(0, 0);
-            this.PNL_ScenarioOverVieuw.Name = "PNL_ScenarioOverVieuw";
-            this.PNL_ScenarioOverVieuw.Size = new System.Drawing.Size(802, 450);
-            this.PNL_ScenarioOverVieuw.TabIndex = 1;
+            this.PNL_ScenarioOverview.BackColor = System.Drawing.Color.Transparent;
+            this.PNL_ScenarioOverview.Location = new System.Drawing.Point(0, 0);
+            this.PNL_ScenarioOverview.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PNL_ScenarioOverview.Name = "PNL_ScenarioOverview";
+            this.PNL_ScenarioOverview.Size = new System.Drawing.Size(1069, 554);
+            this.PNL_ScenarioOverview.TabIndex = 1;
             // 
             // Admin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::OVD_VistaVirtuals.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.ControlBox = false;
-            this.Controls.Add(this.PNL_ScenarioOverVieuw);
+            this.Controls.Add(this.PNL_ScenarioOverview);
             this.Controls.Add(this.PNL_authorisation);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MinimizeBox = false;
             this.Name = "Admin";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -71,6 +74,6 @@ namespace OVD_VistaVirtuals
         #endregion
 
         private System.Windows.Forms.Panel PNL_authorisation;
-        private System.Windows.Forms.Panel PNL_ScenarioOverVieuw;
+        private System.Windows.Forms.Panel PNL_ScenarioOverview;
     }
 }
