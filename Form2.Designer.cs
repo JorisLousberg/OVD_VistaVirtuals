@@ -37,7 +37,7 @@ namespace OVD_VistaVirtuals
             // 
             this.PNL_authorisation.BackColor = System.Drawing.Color.Transparent;
             this.PNL_authorisation.Location = new System.Drawing.Point(0, 0);
-            this.PNL_authorisation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PNL_authorisation.Margin = new System.Windows.Forms.Padding(4);
             this.PNL_authorisation.Name = "PNL_authorisation";
             this.PNL_authorisation.Size = new System.Drawing.Size(1069, 554);
             this.PNL_authorisation.TabIndex = 0;
@@ -46,10 +46,11 @@ namespace OVD_VistaVirtuals
             // 
             this.PNL_ScenarioOverview.BackColor = System.Drawing.Color.Transparent;
             this.PNL_ScenarioOverview.Location = new System.Drawing.Point(0, 0);
-            this.PNL_ScenarioOverview.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PNL_ScenarioOverview.Margin = new System.Windows.Forms.Padding(4);
             this.PNL_ScenarioOverview.Name = "PNL_ScenarioOverview";
             this.PNL_ScenarioOverview.Size = new System.Drawing.Size(1069, 554);
             this.PNL_ScenarioOverview.TabIndex = 1;
+            this.PNL_ScenarioOverview.Paint += new System.Windows.Forms.PaintEventHandler(this.PNL_ScenarioOverview_Paint);
             // 
             // Admin
             // 
@@ -62,7 +63,7 @@ namespace OVD_VistaVirtuals
             this.Controls.Add(this.PNL_ScenarioOverview);
             this.Controls.Add(this.PNL_authorisation);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimizeBox = false;
             this.Name = "Admin";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

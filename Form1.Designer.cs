@@ -50,17 +50,18 @@ namespace OVD_VistaVirtuals
             this.PNL_Start_Screen.Controls.Add(this.button3);
             this.PNL_Start_Screen.Controls.Add(this.button1);
             this.PNL_Start_Screen.Location = new System.Drawing.Point(0, 0);
-            this.PNL_Start_Screen.Margin = new System.Windows.Forms.Padding(4);
+            this.PNL_Start_Screen.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.PNL_Start_Screen.Name = "PNL_Start_Screen";
-            this.PNL_Start_Screen.Size = new System.Drawing.Size(798, 451);
+            this.PNL_Start_Screen.Size = new System.Drawing.Size(1064, 555);
             this.PNL_Start_Screen.TabIndex = 0;
             this.PNL_Start_Screen.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(12, 368);
+            this.button3.Location = new System.Drawing.Point(16, 453);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(120, 56);
+            this.button3.Size = new System.Drawing.Size(160, 69);
             this.button3.TabIndex = 1;
             this.button3.Text = "Oculus";
             this.button3.UseVisualStyleBackColor = true;
@@ -68,9 +69,10 @@ namespace OVD_VistaVirtuals
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(475, 228);
+            this.button1.Location = new System.Drawing.Point(633, 281);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(151, 91);
+            this.button1.Size = new System.Drawing.Size(201, 112);
             this.button1.TabIndex = 0;
             this.button1.Text = "Start";
             this.button1.UseVisualStyleBackColor = true;
@@ -84,19 +86,19 @@ namespace OVD_VistaVirtuals
             this.PNL_Study_Screen.Controls.Add(this.btn_HTV);
             this.PNL_Study_Screen.Controls.Add(this.btn_veva);
             this.PNL_Study_Screen.Location = new System.Drawing.Point(0, 0);
-            this.PNL_Study_Screen.Margin = new System.Windows.Forms.Padding(4);
+            this.PNL_Study_Screen.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.PNL_Study_Screen.Name = "PNL_Study_Screen";
-            this.PNL_Study_Screen.Size = new System.Drawing.Size(801, 451);
+            this.PNL_Study_Screen.Size = new System.Drawing.Size(1068, 555);
             this.PNL_Study_Screen.TabIndex = 1;
             this.PNL_Study_Screen.Visible = false;
             // 
             // btn_terug
             // 
             this.btn_terug.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_terug.Location = new System.Drawing.Point(9, 10);
-            this.btn_terug.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_terug.Location = new System.Drawing.Point(12, 12);
+            this.btn_terug.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_terug.Name = "btn_terug";
-            this.btn_terug.Size = new System.Drawing.Size(79, 37);
+            this.btn_terug.Size = new System.Drawing.Size(105, 46);
             this.btn_terug.TabIndex = 4;
             this.btn_terug.Text = "Terug";
             this.btn_terug.UseVisualStyleBackColor = true;
@@ -106,10 +108,10 @@ namespace OVD_VistaVirtuals
             // 
             this.btn_PB.BackColor = System.Drawing.Color.Transparent;
             this.btn_PB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_PB.Location = new System.Drawing.Point(552, 125);
-            this.btn_PB.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_PB.Location = new System.Drawing.Point(736, 154);
+            this.btn_PB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_PB.Name = "btn_PB";
-            this.btn_PB.Size = new System.Drawing.Size(122, 188);
+            this.btn_PB.Size = new System.Drawing.Size(163, 231);
             this.btn_PB.TabIndex = 3;
             this.btn_PB.Text = "PB";
             this.btn_PB.UseVisualStyleBackColor = false;
@@ -119,10 +121,10 @@ namespace OVD_VistaVirtuals
             // 
             this.btn_HTV.BackColor = System.Drawing.Color.Transparent;
             this.btn_HTV.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_HTV.Location = new System.Drawing.Point(338, 125);
-            this.btn_HTV.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_HTV.Location = new System.Drawing.Point(451, 154);
+            this.btn_HTV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_HTV.Name = "btn_HTV";
-            this.btn_HTV.Size = new System.Drawing.Size(122, 188);
+            this.btn_HTV.Size = new System.Drawing.Size(163, 231);
             this.btn_HTV.TabIndex = 2;
             this.btn_HTV.Text = "HTV";
             this.btn_HTV.UseVisualStyleBackColor = false;
@@ -134,10 +136,10 @@ namespace OVD_VistaVirtuals
             this.btn_veva.BackColor = System.Drawing.Color.Transparent;
             this.btn_veva.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_veva.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_veva.Location = new System.Drawing.Point(123, 125);
-            this.btn_veva.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_veva.Location = new System.Drawing.Point(164, 154);
+            this.btn_veva.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_veva.Name = "btn_veva";
-            this.btn_veva.Size = new System.Drawing.Size(122, 188);
+            this.btn_veva.Size = new System.Drawing.Size(163, 231);
             this.btn_veva.TabIndex = 0;
             this.btn_veva.Text = "VEVA";
             this.btn_veva.UseVisualStyleBackColor = false;
@@ -148,17 +150,18 @@ namespace OVD_VistaVirtuals
             this.PNL_Scenario_Screen.BackColor = System.Drawing.Color.Transparent;
             this.PNL_Scenario_Screen.Controls.Add(this.BTN_start_exe);
             this.PNL_Scenario_Screen.Location = new System.Drawing.Point(0, 0);
-            this.PNL_Scenario_Screen.Margin = new System.Windows.Forms.Padding(4);
+            this.PNL_Scenario_Screen.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.PNL_Scenario_Screen.Name = "PNL_Scenario_Screen";
-            this.PNL_Scenario_Screen.Size = new System.Drawing.Size(801, 451);
+            this.PNL_Scenario_Screen.Size = new System.Drawing.Size(1068, 555);
             this.PNL_Scenario_Screen.TabIndex = 1;
             this.PNL_Scenario_Screen.Visible = false;
             // 
             // BTN_start_exe
             // 
-            this.BTN_start_exe.Location = new System.Drawing.Point(281, 186);
+            this.BTN_start_exe.Location = new System.Drawing.Point(375, 229);
+            this.BTN_start_exe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BTN_start_exe.Name = "BTN_start_exe";
-            this.BTN_start_exe.Size = new System.Drawing.Size(239, 66);
+            this.BTN_start_exe.Size = new System.Drawing.Size(319, 81);
             this.BTN_start_exe.TabIndex = 0;
             this.BTN_start_exe.Text = "start program";
             this.BTN_start_exe.UseVisualStyleBackColor = true;
@@ -166,17 +169,17 @@ namespace OVD_VistaVirtuals
             // 
             // VistaVirtuals
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::OVD_VistaVirtuals.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.ControlBox = false;
             this.Controls.Add(this.PNL_Start_Screen);
             this.Controls.Add(this.PNL_Study_Screen);
             this.Controls.Add(this.PNL_Scenario_Screen);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.MinimizeBox = false;
             this.Name = "VistaVirtuals";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

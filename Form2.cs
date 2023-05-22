@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace OVD_VistaVirtuals
 {
@@ -18,6 +19,11 @@ namespace OVD_VistaVirtuals
         }
 
         private void Admin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PNL_ScenarioOverview_Paint(object sender, PaintEventArgs e)
         {
 
         }
