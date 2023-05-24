@@ -17,9 +17,41 @@ namespace OVD_VistaVirtuals
             InitializeComponent();
         }
 
+        //   SqlConnection conn = new SqlConnection("server=localhost;database=ovd;uid=root;password=");
+
         private void Admin_Load(object sender, EventArgs e)
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            String pass;
+           // user = textBox1.Text;
+            pass = textBox2.Text;
+
+            if (pass == "admin")
+               
+            { 
+               // MessageBox.Show("succesfull");
+                PNL_ScenarioOverVieuw.Visible = true;
+                PNL_authorisation.BringToFront();
+                PNL_ScenarioOverVieuw.Visible = false;
+            }
+            else
+            {
+                MessageBox.Show("Verkeerde Code");
+            }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            textBox2.PasswordChar = '*';
+        }
     }
 }
+
+
+
+//console.WriteLine
+

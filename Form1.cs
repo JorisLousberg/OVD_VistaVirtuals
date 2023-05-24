@@ -25,13 +25,13 @@ namespace OVD_VistaVirtuals
         {
             PNL_Start_Screen.BringToFront();
             MessageBox.Show("Test Start");
-            /*
+            
             var frh = new Admin();
             frh.Location = this.Location;
             frh.StartPosition = FormStartPosition.Manual;
             frh.FormClosing += delegate { this.Show(); };
             frh.Show();
-            this.Hide();*/
+            this.Hide();
 
         }
 
