@@ -31,6 +31,8 @@ namespace OVD_VistaVirtuals
         {
             this.PNL_authorisation = new System.Windows.Forms.Panel();
             this.PNL_ScenarioOverview = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.PNL_ScenarioOverview.SuspendLayout();
             this.SuspendLayout();
             // 
             // PNL_authorisation
@@ -45,12 +47,23 @@ namespace OVD_VistaVirtuals
             // PNL_ScenarioOverview
             // 
             this.PNL_ScenarioOverview.BackColor = System.Drawing.Color.Transparent;
+            this.PNL_ScenarioOverview.Controls.Add(this.button1);
             this.PNL_ScenarioOverview.Location = new System.Drawing.Point(0, 0);
             this.PNL_ScenarioOverview.Margin = new System.Windows.Forms.Padding(4);
             this.PNL_ScenarioOverview.Name = "PNL_ScenarioOverview";
             this.PNL_ScenarioOverview.Size = new System.Drawing.Size(1069, 554);
             this.PNL_ScenarioOverview.TabIndex = 1;
             this.PNL_ScenarioOverview.Paint += new System.Windows.Forms.PaintEventHandler(this.PNL_ScenarioOverview_Paint);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(501, 256);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 130);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Admin
             // 
@@ -68,6 +81,7 @@ namespace OVD_VistaVirtuals
             this.Name = "Admin";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Admin_Load);
+            this.PNL_ScenarioOverview.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -76,5 +90,6 @@ namespace OVD_VistaVirtuals
 
         private System.Windows.Forms.Panel PNL_authorisation;
         private System.Windows.Forms.Panel PNL_ScenarioOverview;
+        private System.Windows.Forms.Button button1;
     }
 }

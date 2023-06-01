@@ -68,8 +68,8 @@ namespace OVD_VistaVirtuals
 
             opleiding = "VEVA";
 
-           /* MessageBox.Show("click here");
-            this.Close();*/
+           MessageBox.Show("click here");
+            this.Close();
         }
 
         private void btn_HTV_Click(object sender, EventArgs e)
