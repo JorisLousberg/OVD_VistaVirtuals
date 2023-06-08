@@ -29,6 +29,8 @@ namespace OVD_VistaVirtuals
             InitializeComponent();
         }
 
+        //   SqlConnection conn = new SqlConnection("server=localhost;database=ovd;uid=root;password=");
+
         private void Admin_Load(object sender, EventArgs e)
         {
             Reader();
@@ -108,5 +110,32 @@ namespace OVD_VistaVirtuals
                 }
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            String pass;
+            pass = textBox2.Text;
+
+            if (pass == "admin")
+               
+            { 
+                PNL_ScenarioOverVieuw.Visible = true;
+                PNL_authorisation.BringToFront();
+                PNL_ScenarioOverVieuw.Visible = false;
+            }
+            else
+            {
+                MessageBox.Show("Wrong password");
+            }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            textBox2.PasswordChar = '*';
+        }
     }
 }
+
+
+
+
