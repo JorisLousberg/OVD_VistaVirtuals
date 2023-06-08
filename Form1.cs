@@ -24,7 +24,7 @@ namespace OVD_VistaVirtuals
         private void Form1_Load(object sender, EventArgs e)
         {
             PNL_Start_Screen.BringToFront();
-            MessageBox.Show("Test Start");
+            //MessageBox.Show("Test Start");
             
             var frh = new Admin();
             frh.Location = this.Location;
