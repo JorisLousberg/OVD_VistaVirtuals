@@ -38,7 +38,9 @@ namespace OVD_VistaVirtuals
             this.btn_HTV = new System.Windows.Forms.Button();
             this.btn_veva = new System.Windows.Forms.Button();
             this.PNL_Scenario_Screen = new System.Windows.Forms.Panel();
+            this.BTN_TestVar = new System.Windows.Forms.Button();
             this.BTN_start_exe = new System.Windows.Forms.Button();
+            this.PNL_scenariobuttons = new System.Windows.Forms.Panel();
             this.PNL_Start_Screen.SuspendLayout();
             this.PNL_Study_Screen.SuspendLayout();
             this.PNL_Scenario_Screen.SuspendLayout();
@@ -54,7 +56,6 @@ namespace OVD_VistaVirtuals
             this.PNL_Start_Screen.Name = "PNL_Start_Screen";
             this.PNL_Start_Screen.Size = new System.Drawing.Size(1064, 555);
             this.PNL_Start_Screen.TabIndex = 0;
-            this.PNL_Start_Screen.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // button3
             // 
@@ -148,6 +149,8 @@ namespace OVD_VistaVirtuals
             // PNL_Scenario_Screen
             // 
             this.PNL_Scenario_Screen.BackColor = System.Drawing.Color.Transparent;
+            this.PNL_Scenario_Screen.Controls.Add(this.PNL_scenariobuttons);
+            this.PNL_Scenario_Screen.Controls.Add(this.BTN_TestVar);
             this.PNL_Scenario_Screen.Controls.Add(this.BTN_start_exe);
             this.PNL_Scenario_Screen.Location = new System.Drawing.Point(0, 0);
             this.PNL_Scenario_Screen.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
@@ -155,6 +158,17 @@ namespace OVD_VistaVirtuals
             this.PNL_Scenario_Screen.Size = new System.Drawing.Size(1068, 555);
             this.PNL_Scenario_Screen.TabIndex = 1;
             this.PNL_Scenario_Screen.Visible = false;
+            // 
+            // BTN_TestVar
+            // 
+            this.BTN_TestVar.Location = new System.Drawing.Point(81, 56);
+            this.BTN_TestVar.Name = "BTN_TestVar";
+            this.BTN_TestVar.Size = new System.Drawing.Size(111, 69);
+            this.BTN_TestVar.TabIndex = 1;
+            this.BTN_TestVar.Text = "test";
+            this.BTN_TestVar.UseVisualStyleBackColor = true;
+            this.BTN_TestVar.Visible = false;
+            this.BTN_TestVar.Click += new System.EventHandler(this.BTN_TestVar_Click);
             // 
             // BTN_start_exe
             // 
@@ -165,7 +179,16 @@ namespace OVD_VistaVirtuals
             this.BTN_start_exe.TabIndex = 0;
             this.BTN_start_exe.Text = "start program";
             this.BTN_start_exe.UseVisualStyleBackColor = true;
+            this.BTN_start_exe.Visible = false;
             this.BTN_start_exe.Click += new System.EventHandler(this.BTN_start_exe_Click);
+            // 
+            // PNL_scenariobuttons
+            // 
+            this.PNL_scenariobuttons.AutoScroll = true;
+            this.PNL_scenariobuttons.Location = new System.Drawing.Point(123, 138);
+            this.PNL_scenariobuttons.Name = "PNL_scenariobuttons";
+            this.PNL_scenariobuttons.Size = new System.Drawing.Size(562, 227);
+            this.PNL_scenariobuttons.TabIndex = 2;
             // 
             // VistaVirtuals
             // 
@@ -175,9 +198,9 @@ namespace OVD_VistaVirtuals
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.ControlBox = false;
+            this.Controls.Add(this.PNL_Scenario_Screen);
             this.Controls.Add(this.PNL_Start_Screen);
             this.Controls.Add(this.PNL_Study_Screen);
-            this.Controls.Add(this.PNL_Scenario_Screen);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.MinimizeBox = false;
@@ -204,6 +227,8 @@ namespace OVD_VistaVirtuals
         private System.Windows.Forms.Button btn_PB;
         private System.Windows.Forms.Button btn_HTV;
         private System.Windows.Forms.Button btn_terug;
+        private System.Windows.Forms.Button BTN_TestVar;
+        private System.Windows.Forms.Panel PNL_scenariobuttons;
     }
 }
 
