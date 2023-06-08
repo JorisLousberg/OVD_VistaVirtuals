@@ -44,7 +44,7 @@ namespace OVD_VistaVirtuals
             frh.StartPosition = FormStartPosition.Manual;
             frh.FormClosing += delegate { this.Show(); };
             frh.Show();
-            this.Hide();*/
+            this.Hide();
             ReadingFile();
             PNL_Study_Screen.Visible = false;
             PNL_Study_Screen.SendToBack();
@@ -211,10 +211,6 @@ namespace OVD_VistaVirtuals
                 for (int j = 0; j < Pheight; j++)
                 {
                     genid = genid + 1;
-                    if (genid => rowcount)
-                    {
-                        genid = 1;
-                    }
 
                     PictureBoxes[i,j] = new PictureBox();
                     PictureBoxes[i, j].Name = "block";
