@@ -27,20 +27,18 @@ namespace OVD_VistaVirtuals
         private void button1_Click(object sender, EventArgs e)
         {
             String pass;
-           // user = textBox1.Text;
             pass = textBox2.Text;
 
             if (pass == "admin")
                
             { 
-               // MessageBox.Show("succesfull");
                 PNL_ScenarioOverVieuw.Visible = true;
                 PNL_authorisation.BringToFront();
                 PNL_ScenarioOverVieuw.Visible = false;
             }
             else
             {
-                MessageBox.Show("Verkeerde Code");
+                MessageBox.Show("Wrong password");
             }
         }
 
@@ -53,5 +51,4 @@ namespace OVD_VistaVirtuals
 
 
 
-//console.WriteLine
 
