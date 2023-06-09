@@ -126,7 +126,7 @@ namespace OVD_VistaVirtuals
         private void ReadingFile()
         {
             Console.WriteLine("0-fetching file...");
-            string FileName = (@"C:\Users\joris\source\repos\OVD_VistaVirtuals\Scenario_data_SCV\Scenario_data.csv");
+            string FileName = (@"C:\Users\31614\source\repos\OVD_VistaVirtuals\Scenario_data.csv");
 
             Console.WriteLine("0-reading file...");
             CsvProcessorLib.CsvProcessor.FileName = FileName;

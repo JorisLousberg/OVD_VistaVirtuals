@@ -43,7 +43,7 @@ namespace OVD_VistaVirtuals
 
         private void Reader()
         {
-            string FileName = (@"C:\Project\OVD_VistaVirtuals\Scenario_data.csv");
+            string FileName = (@"C:\Users\31614\source\repos\OVD_VistaVirtuals\Scenario_data.csv");
             CsvProcessorLib.CsvProcessor.FileName = FileName;
             datalist = CsvProcessorLib.CsvProcessor.ReadFile();
             makeList();
@@ -89,9 +89,9 @@ namespace OVD_VistaVirtuals
             {
                 for (int j = 0; j < height; j++)
                 {
-                    
+
                     genid += 1;
-                    
+
                     Labels[i, j] = new Label();
                     Labels[i, j].Name = "Overzicht_Label" + datalistdata[0][ColumnCount];
                     Labels[i, j].Text = datalistdata[genid][ColumnCount];
@@ -111,17 +111,18 @@ namespace OVD_VistaVirtuals
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void button2_Click_1(object sender, EventArgs e)
         {
             String pass;
-            pass = textBox2.Text;
+            pass = textBox1.Text;
 
+            Console.WriteLine(pass);
             if (pass == "admin")
-               
-            { 
+            {
                 PNL_ScenarioOverVieuw.Visible = true;
-                PNL_authorisation.BringToFront();
-                PNL_ScenarioOverVieuw.Visible = false;
+                PNL_authorisation.SendToBack();
+                PNL_authorisation.Visible = false;
             }
             else
             {
@@ -129,12 +130,14 @@ namespace OVD_VistaVirtuals
             }
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
         {
-            textBox2.PasswordChar = '*';
+            textBox1.PasswordChar = '*';
         }
     }
 }
+
 
 
 
