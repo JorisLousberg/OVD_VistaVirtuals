@@ -139,6 +139,16 @@ namespace OVD_VistaVirtuals
         {
             textBox1.PasswordChar = '*';
         }
+
+        private void BTN_return_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void BTN_Return2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
 

@@ -40,7 +40,7 @@ namespace OVD_VistaVirtuals
             //MessageBox.Show("Test Start");
             
             
-            //ReadingFile();
+            ReadingFile();
             PNL_Study_Screen.Visible = false;
             PNL_Study_Screen.SendToBack();
             PNL_Scenario_Screen.Visible = false;
