@@ -34,6 +34,10 @@ namespace OVD_VistaVirtuals
         private void Admin_Load(object sender, EventArgs e)
         {
             Reader();
+            PNL_authorisation.BringToFront();
+            PNL_authorisation.Visible = true;
+            PNL_ScenarioOverVieuw.SendToBack();
+            PNL_ScenarioOverVieuw.Visible = false;
         }
 
         private void PNL_ScenarioOverview_Paint(object sender, PaintEventArgs e)

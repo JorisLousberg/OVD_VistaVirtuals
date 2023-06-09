@@ -39,13 +39,8 @@ namespace OVD_VistaVirtuals
             PNL_Start_Screen.BringToFront();
             //MessageBox.Show("Test Start");
             
-            var frh = new Admin();
-            frh.Location = this.Location;
-            frh.StartPosition = FormStartPosition.Manual;
-            frh.FormClosing += delegate { this.Show(); };
-            frh.Show();
-            this.Hide();
-            ReadingFile();
+            
+            //ReadingFile();
             PNL_Study_Screen.Visible = false;
             PNL_Study_Screen.SendToBack();
             PNL_Scenario_Screen.Visible = false;
@@ -235,6 +230,16 @@ namespace OVD_VistaVirtuals
         public void activate_block(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start(@"C:\Users\joris\OneDrive\Documenten\TrashMasterz\demo V4\trash-Masterz.exe");
+        }
+
+        private void BTN_admin_Click(object sender, EventArgs e)
+        {
+            var frh = new Admin();
+            frh.Location = this.Location;
+            frh.StartPosition = FormStartPosition.Manual;
+            frh.FormClosing += delegate { this.Show(); };
+            frh.Show();
+            this.Hide();
         }
     }
 }
