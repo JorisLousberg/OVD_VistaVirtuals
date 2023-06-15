@@ -108,7 +108,7 @@ namespace OVD_VistaVirtuals
             PNL_Scenario_Screen.Visible = false;
             PNL_Scenario_Screen.SendToBack();
             PNL_Start_Screen.Visible = true;
-
+            PNL_scenariobuttons.Controls.Clear();
         }
 
         private void BTN_TestVar_Click(object sender, EventArgs e)
@@ -121,7 +121,7 @@ namespace OVD_VistaVirtuals
         private void ReadingFile()
         {
             Console.WriteLine("0-fetching file...");
-            string FileName = (@"C:\Users\31614\source\repos\OVD_VistaVirtuals\Scenario_data.csv");
+            string FileName = (@"C:\Users\joris\source\repos\OVD_VistaVirtuals\Scenario_data.csv");
 
             Console.WriteLine("0-reading file...");
             CsvProcessorLib.CsvProcessor.FileName = FileName;
@@ -157,17 +157,17 @@ namespace OVD_VistaVirtuals
                 if (datalistdata[j][1] == "PB")
                 {
                     PB_Count++;
-                Console.WriteLine("PB has been detected " + PB_Count + "amount of times!");
+                Console.WriteLine("PB has been detected " + PB_Count + " amount of times!");
                 }
                 if (datalistdata[j][1] == "HTV")
                 {
                     HTV_Count++;
-                    Console.WriteLine("HTV has been detected " + HTV_Count + "amount of times!");
+                    Console.WriteLine("HTV has been detected " + HTV_Count + " amount of times!");
                 }
                 if (datalistdata[j][1] == "VEVA")
                 {
                     VEVA_Count++;
-                    Console.WriteLine("VEVA has been detected " + VEVA_Count + "amount of times!");
+                    Console.WriteLine("VEVA has been detected " + VEVA_Count + " amount of times!");
                 }
                 Console.WriteLine("-------------------------------------------------------");
                 Console.WriteLine("PB has been counted " + PB_Count + " times!");
@@ -182,40 +182,42 @@ namespace OVD_VistaVirtuals
         PictureBox[,] PictureBoxes = new PictureBox[10, 10];
         private void GenerateButtons()
         {
-            opleiding = "HTV";
+            //opleiding = "HTV";
             //ammount of buttons per line
-            int Pwidth = 4;
+            int Pwidth = 1;
             //number of lines
-            int Pheight = 1;
+            int Pheight = 2;
             switch (opleiding)
             {
                 case "VEVA":
-                    Pwidth = VEVA_Count;
+                    Pheight = VEVA_Count;
                     break;
                 case "HTV":
-                    Pwidth = HTV_Count;
+                    Pheight = HTV_Count;
                     break;
                 case "PB":
-                    Pwidth = PB_Count;
+                    Pheight = PB_Count;
                     break;
             }
+            
             int num;
-            for (int i = 0; i < Pwidth; i++)
+            for (int i = 0; i <= Pwidth; i++)
             {
+                
                 num = i + 1;
                 for (int j = 0; j < Pheight; j++)
                 {
                     genid = genid + 1;
-
+                    
                     PictureBoxes[i,j] = new PictureBox();
-                    PictureBoxes[i, j].Name = "block";
-                    PictureBoxes[i, j].Size = new Size(60, 100);
-                    PictureBoxes[i, j].BackColor = Color.Black;
+                    PictureBoxes[i, j].Name = "block" + genlist;
+                    PictureBoxes[i, j].Size = new Size(200, 200);
+                    PictureBoxes[i, j].BackColor = Color.Gray;
                     PictureBoxes[i, j].BackgroundImageLayout = ImageLayout.Zoom;
                     PictureBoxes[i, j].SizeMode = PictureBoxSizeMode.Zoom;
                     PictureBoxes[i, j].Image = null;
                     PictureBoxes[i, j].Cursor = Cursors.Hand;
-                    PictureBoxes[i, j].Location = new Point(i * 62, j * 62);
+                    PictureBoxes[i, j].Location = new Point(i * 202, j * 202); //I right side, J up
                     Console.WriteLine("|-block" + genid.ToString() + " has been generated");
                     //define button click event
                     PictureBoxes[i,j].Click += new EventHandler(activate_block);

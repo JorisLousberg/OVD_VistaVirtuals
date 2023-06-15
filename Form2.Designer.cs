@@ -53,14 +53,15 @@ namespace OVD_VistaVirtuals
             this.PNL_authorisation.Controls.Add(this.button2);
             this.PNL_authorisation.Location = new System.Drawing.Point(0, 0);
             this.PNL_authorisation.Name = "PNL_authorisation";
-            this.PNL_authorisation.Size = new System.Drawing.Size(802, 450);
+            this.PNL_authorisation.Size = new System.Drawing.Size(1903, 1060);
             this.PNL_authorisation.TabIndex = 0;
             // 
             // BTN_return
             // 
-            this.BTN_return.Location = new System.Drawing.Point(33, 384);
+            this.BTN_return.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_return.Location = new System.Drawing.Point(12, 937);
             this.BTN_return.Name = "BTN_return";
-            this.BTN_return.Size = new System.Drawing.Size(95, 50);
+            this.BTN_return.Size = new System.Drawing.Size(277, 115);
             this.BTN_return.TabIndex = 2;
             this.BTN_return.Text = "Return";
             this.BTN_return.UseVisualStyleBackColor = true;
@@ -68,21 +69,24 @@ namespace OVD_VistaVirtuals
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(293, 152);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(484, 338);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(126, 20);
+            this.textBox1.Size = new System.Drawing.Size(1062, 123);
             this.textBox1.TabIndex = 1;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(293, 182);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(884, 480);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(124, 37);
+            this.button2.Size = new System.Drawing.Size(283, 104);
             this.button2.TabIndex = 0;
-            this.button2.Text = "button2";
+            this.button2.Text = "Enter";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
@@ -93,15 +97,16 @@ namespace OVD_VistaVirtuals
             this.PNL_ScenarioOverview.Controls.Add(this.PNL_Overview);
             this.PNL_ScenarioOverview.Location = new System.Drawing.Point(0, 0);
             this.PNL_ScenarioOverview.Name = "PNL_ScenarioOverview";
-            this.PNL_ScenarioOverview.Size = new System.Drawing.Size(802, 450);
+            this.PNL_ScenarioOverview.Size = new System.Drawing.Size(1903, 1060);
             this.PNL_ScenarioOverview.TabIndex = 1;
             this.PNL_ScenarioOverview.Paint += new System.Windows.Forms.PaintEventHandler(this.PNL_ScenarioOverview_Paint);
             // 
             // BTN_Return2
             // 
-            this.BTN_Return2.Location = new System.Drawing.Point(33, 387);
+            this.BTN_Return2.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Return2.Location = new System.Drawing.Point(12, 937);
             this.BTN_Return2.Name = "BTN_Return2";
-            this.BTN_Return2.Size = new System.Drawing.Size(95, 46);
+            this.BTN_Return2.Size = new System.Drawing.Size(277, 115);
             this.BTN_Return2.TabIndex = 1;
             this.BTN_Return2.Text = "Return";
             this.BTN_Return2.UseVisualStyleBackColor = true;
@@ -110,10 +115,10 @@ namespace OVD_VistaVirtuals
             // PNL_Overview
             // 
             this.PNL_Overview.AutoScroll = true;
-            this.PNL_Overview.Location = new System.Drawing.Point(102, 74);
+            this.PNL_Overview.Location = new System.Drawing.Point(237, 195);
             this.PNL_Overview.Margin = new System.Windows.Forms.Padding(2);
             this.PNL_Overview.Name = "PNL_Overview";
-            this.PNL_Overview.Size = new System.Drawing.Size(599, 299);
+            this.PNL_Overview.Size = new System.Drawing.Size(1500, 677);
             this.PNL_Overview.TabIndex = 0;
             // 
             // PNL_ScenarioOverVieuw
@@ -144,10 +149,10 @@ namespace OVD_VistaVirtuals
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::OVD_VistaVirtuals.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1904, 1064);
             this.ControlBox = false;
-            this.Controls.Add(this.PNL_authorisation);
             this.Controls.Add(this.PNL_ScenarioOverview);
+            this.Controls.Add(this.PNL_authorisation);
             this.DoubleBuffered = true;
             this.MinimizeBox = false;
             this.Name = "Admin";

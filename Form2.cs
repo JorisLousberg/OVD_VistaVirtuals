@@ -47,7 +47,7 @@ namespace OVD_VistaVirtuals
 
         private void Reader()
         {
-            string FileName = (@"C:\Users\31614\source\repos\OVD_VistaVirtuals\Scenario_data.csv");
+            string FileName = (@"C:\Users\joris\source\repos\OVD_VistaVirtuals\Scenario_data.csv");
             CsvProcessorLib.CsvProcessor.FileName = FileName;
             datalist = CsvProcessorLib.CsvProcessor.ReadFile();
             makeList();
