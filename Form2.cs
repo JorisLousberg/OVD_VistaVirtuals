@@ -99,8 +99,10 @@ namespace OVD_VistaVirtuals
                     Labels[i, j] = new Label();
                     Labels[i, j].Name = "Overzicht_Label" + datalistdata[0][ColumnCount];
                     Labels[i, j].Text = datalistdata[genid][ColumnCount];
-                    Labels[i, j].Size = new Size(100, 50);
-                    Labels[i, j].Location = new Point(i * 105, j * 55);
+                    Labels[i, j].Font = new Font("Arial", 20, FontStyle.Regular);
+                    Labels[i, j].AutoSize = true;
+                    Labels[i, j].Size = new Size(200, 50);
+                    Labels[i, j].Location = new Point(i * 205, j * 55);
 
                     Console.WriteLine(genid);
 

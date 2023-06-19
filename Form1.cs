@@ -65,7 +65,7 @@ namespace OVD_VistaVirtuals
         private void button3_Click(object sender, EventArgs e)
         {
             MessageBox.Show("U word doorverwezen naar een externe pagina. Wilt u doorgaan?");
-            ProcessStartInfo sInfo = new ProcessStartInfo("https://www.youtube.com/watch?v=GtL1huin9EE&t=1s");
+            ProcessStartInfo sInfo = new ProcessStartInfo("https://auth.oculus.com/login-with-oculus/");
             Process.Start(sInfo);
         }
 
@@ -186,17 +186,17 @@ namespace OVD_VistaVirtuals
             //ammount of buttons per line
             int Pwidth = 1;
             //number of lines
-            int Pheight = 2;
+            int Pheight = 1;
             switch (opleiding)
             {
                 case "VEVA":
-                    Pheight = VEVA_Count;
+                    Pwidth = VEVA_Count;
                     break;
                 case "HTV":
-                    Pheight = HTV_Count;
+                    Pwidth = HTV_Count;
                     break;
                 case "PB":
-                    Pheight = PB_Count;
+                    Pwidth = PB_Count;
                     break;
             }
             
@@ -211,13 +211,13 @@ namespace OVD_VistaVirtuals
                     
                     PictureBoxes[i,j] = new PictureBox();
                     PictureBoxes[i, j].Name = "block" + genlist;
-                    PictureBoxes[i, j].Size = new Size(200, 200);
+                    PictureBoxes[i, j].Size = new Size(150, 150);
                     PictureBoxes[i, j].BackColor = Color.Gray;
                     PictureBoxes[i, j].BackgroundImageLayout = ImageLayout.Zoom;
                     PictureBoxes[i, j].SizeMode = PictureBoxSizeMode.Zoom;
                     PictureBoxes[i, j].Image = null;
                     PictureBoxes[i, j].Cursor = Cursors.Hand;
-                    PictureBoxes[i, j].Location = new Point(i * 202, j * 202); //I right side, J up
+                    PictureBoxes[i, j].Location = new Point(i * 152, j * 152); //I right side, J up
                     Console.WriteLine("|-block" + genid.ToString() + " has been generated");
                     //define button click event
                     PictureBoxes[i,j].Click += new EventHandler(activate_block);
